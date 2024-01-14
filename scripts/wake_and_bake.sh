@@ -5,7 +5,7 @@ set -e
 ORIGINAL_DIR=$(pwd)
 CHAINCODE_NAME="REPORT-HUB"
 CHAINCODE_LANGUAGE="go"
-CHAINCODE_PATH="../chaincode-sm/"
+CHAINCODE_PATH="../../chaincode-sm/"
 
 echo REMOVING EXISTING WALLETS
 rm -rf javascript/wallet/*
@@ -14,7 +14,7 @@ rm -rf java/wallet/*
 rm -rf typescript/wallet/*
 echo COMPLETE
 
-pushd ../fabric-samples/test-netork
+pushd ../fabric-samples/test-network
 
 ./network.sh down
 ./network.sh up
