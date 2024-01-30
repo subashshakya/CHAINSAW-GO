@@ -5,7 +5,7 @@ export MSYS_NO_PATHCONV=1
 starttime=$(date +%s)
 
 USER_MSP_SOURCE_PATH="../fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp"
-USER_MSP_DESTINATION_PATH="../rest-api/"
+USER_MSP_DESTINATION_PATH="../rest-api/keys"
 cp ${USER_MSP_SOURCE_PATH}/cacerts/* ${USER_MSP_DESTINATION_PATH}/cacert.pem
 cp ${USER_MSP_SOURCE_PATH}/keystore/* ${USER_MSP_DESTINATION_PATH}/privatekey.pem
 cp ${USER_MSP_SOURCE_PATH}/signcerts/* ${USER_MSP_DESTINATION_PATH}/signcert.pem
